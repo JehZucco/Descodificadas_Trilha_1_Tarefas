@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@300;500&family=VT323&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;;
+    font-family: 'VT323', monospace;
+    text-align: center;
+}
+body{
+    background-color: rgb(253, 205, 247);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@keyframes batidaCoracao{
+    0%{
+        width: 500px;
+    }
+    50%{
+        width: 550px;
+    }
+}
+@keyframes batidaCoracao2{
+    0%{
+        width: 300px;
+    }
+    50%{
+        width: 325px;
+    }
+}
+.img{
+    width: 600px;
+    height: 600px;
+}
+img{
+    width:500px;
+    animation: batidaCoracao 1s ease-in-out infinite;
+}
+
+@keyframes changeParagrafoColor{
+    0%{
+        color:transparent;
+    }
+    50%{
+        color: rgb(240, 149, 228);
+    }
+    100%{
+        color: black;
+    }
+}
+h1{
+    padding-top:10px;
+    font-size: 100px;
+    transition-property: color;
+    transition-duration: 5s;
+}
+p{
+    font-size: 50px;
+    margin: 20px 0px 60px 0px;
+    animation: changeParagrafoColor 5s ease-in 1;
+}
+
+@media only screen and (max-width: 480px) and (min-width: 240px){
+    h1{
+        font-size: 4rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+    img{
+        width: 300px;
+        animation: batidaCoracao2 1s ease-in-out infinite;
+    }
+    
+}
+footer p{
+    font-size: 1rem;
+    margin: 20px 0px;
+    letter-spacing: 0.1rem;
+}
